@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -38,6 +38,7 @@ a:hover {
     background-size: cover;
     position: relative;
 }
+
 
 .bloc .container {
     padding-left: 0;
@@ -150,17 +151,17 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
+    background: #fff;
 }
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
+    color: #fff;
+    border-color: #fff;
 }
 
 .d-bloc .panel {
@@ -184,7 +185,7 @@ a:hover {
 }
 
 .d-bloc .panel .a-btn:hover {
-    color: rgba(0, 0, 0, 1);
+    color: #000;
 }
 
 .d-bloc .panel .btn-wire,
@@ -249,7 +250,7 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: #000;
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -296,7 +297,7 @@ a:hover {
     height: auto;
     padding: 3px 15px;
     font-size: 25px;
-    font-weight: normal;
+    font-weight: 400;
     font-weight: 600;
     line-height: 44px;
 }
@@ -479,6 +480,12 @@ button {
     font-size: 30px!important;
 }
 
+.icon-md:hover {
+ color:#000!important;
+ transition:all .3s ease-in;
+ text-shadow:1px 1px 1px #af9c9c
+}
+
 .icon-lg {
     font-size: 60px!important;
 }
@@ -542,7 +549,7 @@ a[data-lightbox]:hover::before {
     font-size: 32px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
+    
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
@@ -639,6 +646,8 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
+.btn,
+a
 h1,
 h2,
 h3,
@@ -647,8 +656,8 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+
+p {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -677,7 +686,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .tight-width-whitespace {
@@ -700,7 +709,7 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    
     margin: auto auto auto auto;
 }
 
@@ -741,6 +750,7 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .portfolio-row {
@@ -780,7 +790,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -822,7 +832,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -867,8 +877,9 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
-    #hero-bloc {
+    
+    #hero-bloc, 
+        .page-container{
         overflow-x: hidden;
         position: relative;
     }
@@ -890,20 +901,35 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .text-center1{
+        opacity: 0.8;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-center2{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
     }
+
+    #disqus_thread,
     h1,
     h2,
     h3,
     h4,
     h5,
     h6,
-    p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+    p {
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+        font-size: 1.3em;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1040,3 +1066,4 @@ h4 {
         text-align: center;
     }
 }
+
