@@ -689,6 +689,11 @@ p {
     font-size: 13px;
 }
 
+p span{
+    font-size: 15px;
+    color: rgba(0, 0, 0, .5);
+}
+
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -701,11 +706,12 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #000!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    background: #f3976c
 }
 
 .social {
@@ -745,7 +751,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .portfolio-thumb {
@@ -785,12 +791,16 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #f3976c !important;
+}
+
+.tc-white span{
+    color: black;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #000000!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -858,13 +868,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -883,10 +893,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -895,8 +902,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
