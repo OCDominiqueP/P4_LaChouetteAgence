@@ -134,7 +134,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(32, 27, 27, 0.6);
 }
 
 .d-bloc .a-btn:hover,
@@ -196,9 +196,14 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 0.57);
 }
 
+@media (max-width: 767px) {
+    .l-bloc {
+        text-align: center;
+    }
+}
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
@@ -288,7 +293,8 @@ a:hover {
     font-size: 32px;
 }
 
-.navbar {
+.navbar{
+    
     margin-bottom: 0;
     z-index: 1;
 }
@@ -303,6 +309,7 @@ a:hover {
 }
 
 .navbar-brand img {
+        
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
@@ -439,6 +446,7 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+
 }
 
 .mg-lg {
@@ -660,7 +668,7 @@ label,
 p {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #3c3939!important;
 }
 
 .container {
@@ -691,7 +699,7 @@ p {
 
 p span{
     font-size: 15px;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 0.57);
 }
 
 .tight-width-whitespace {
@@ -751,7 +759,18 @@ h4 {
 }
 
 .white {
-    color: #000!important;
+    color: #FFF!important;
+}
+
+@media (max-width: 767px) {
+    .white {
+    font-size: 12px;
+    text-align: center;
+    }
+}       
+
+.white span {
+    color: #2b2929!important;
 }
 
 .portfolio-thumb {
@@ -769,7 +788,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(100, 89, 61, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -787,15 +806,30 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #F7AA84;
 }
 
 .tc-white {
-    color: #F3A884 !important;
+    color: #FFF !important;
+    font-size: 2em;
 }
 
+.tc-white1 {
+    color: #F9DDD1 !important;
+}
+
+.tc-white2 {
+    color: #f9efef !important;
+}
+
+@media (max-width: 767px) {
+    .tc-white2 {
+        font-size: 14px;
+        text-align: center;
+    }
+}
 .tc-white span{
-    color: black;
+    color: #060606;
 }
 
 .btn-atomic-tangerine {
@@ -996,6 +1030,8 @@ h4 {
         max-height: 40px;
         width: auto;
     }
+
+
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
@@ -1070,5 +1106,13 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.social p{
+    display: none;
+}
+
+#bloc-6 {
+    background-color: #A45E4942;
 }
 
