@@ -727,6 +727,7 @@ p span{
     margin: auto auto auto auto;
 }
 
+
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -1114,5 +1115,25 @@ h4 {
 
 #bloc-6 {
     background-color: #A45E4942;
+}
+
+
+
+input:focus{
+    background: #f5ddd3;
+    color: black;
+}
+
+.form-control:focus{
+    background: #f5ddd3;
+    color: black;
+}
+
+.nav > li a:focus, .nav > li a:hover {
+    background: rgba(243,151,108,.5);
+}
+
+.btn-atomic-tangerine:focus{
+    background: #f5ddd3;
 }
 
